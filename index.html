@@ -1,39 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ImmunoAI – Precision Immunotherapy Platform</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>ImmunoAI – Precision Immunotherapy Platform</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <h1>ImmunoAI</h1>
-  <p>Revolutionizing personalized immunotherapy with AI</p>
-</header>
-
-<section class="hero">
-  <h2>AI-powered immune profiling</h2>
-  <p>Advanced prediction for treatment response, biomarkers, and personalized protocols.</p>
-</section>
-
-<section class="features">
-  <div class="feature">
-    <h3>Cell Analysis</h3>
-    <p>Deep learning models to analyze immune cell images.</p>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>Early-access program for research hospitals & biotech partners</span>
+    <a href="#contact">Request access →</a>
   </div>
-  <div class="feature">
-    <h3>Biomarker Detection</h3>
-    <p>Predictive insights for treatment selection.</p>
-  </div>
-  <div class="feature">
-    <h3>AI Recommendations</h3>
-    <p>Personalized immunotherapy pathways tailored to each patient.</p>
-  </div>
-</section>
 
-<footer>
-  <p>© 2025 ImmunoAI</p>
-</footer>
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-dot"></div>
+      <div class="logo-text">
+        <span class="logo-title">ImmunoAI</span>
+        <span class="logo-sub">Immunotherapy Intelligence</span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#workflow">How it works</a>
+      <a href="#usecases">Use cases</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn-outline">Book a call</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="platform">
+    <div class="hero-content">
+      <h1>
+        AI platform for<br />
+        <span class="accent">personalized immunotherapy</span>
+      </h1>
+      <p class="hero-sub">
+        ImmunoAI integrates multi-omics data, imaging, and real-world
+        clinical outcomes to predict immunotherapy response, optimize
+        dosing, and design adaptive treatment protocols.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a live demo</a>
+        <a href="#workflow" class="btn-ghost">View clinical workflow</a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="hero-pill">Immune profiling</div>
+        <div class="hero-pill">Biomarker discovery</div>
+        <div class="hero-pill">Response prediction</div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card hero-card-main">
+        <h3>Immune cell map</h3>
+        <p>AI-driven signatures across T-cells, NK cells, and myeloid subsets.</p>
+        <div class="chip-row">
+          <span class="chip">Single-cell</span>
+          <span class="chip">Histopathology</span>
+          <span class="chip">Flow cytometry</span>
+        </div>
+      </div>
+
+      <div class="hero-card hero-card-dna">
+        <div class="dna-ring"></div>
+        <div class="dna-lines"></div>
+        <span class="dna-label">Genomic &amp; proteomic biomarkers</span>
+      </div>
+
+      <div class="hero-card hero-card-metrics">
+        <h4>Response probability</h4>
+        <div class="metric-row">
+          <span>6-month ORR</span>
+          <span class="metric-value">82%</span>
+        </div>
+        <div class="metric-row">
+          <span>Toxicity risk</span>
+          <span class="metric-value warning">Low</span>
+        </div>
+        <div class="metric-row">
+          <span>Confidence</span>
+          <span class="metric-value">0.93</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Grid -->
+  <section class="section features">
+    <h2>Core capabilities</h2>
+    <p class="section-sub">
+      A full stack for immune-system understanding – from raw data to
+      actionable clinical decisions.
+    </p>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3>Cell-level analysis</h3>
+        <p>
+          Deep learning models quantifying immune cell sub-types from
+          microscopy and digital pathology images.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Biomarker detection</h3>
+        <p>
+          Automated discovery of predictive biomarkers from genomic,
+          transcriptomic, and proteomic signatures.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Response prediction</h3>
+        <p>
+          Patient-specific likelihood of response to checkpoint inhibitors,
+          CAR-T, and combination therapies.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Adaptive dosing</h3>
+        <p>
+          AI-guided dosing and scheduling recommendations to balance
+          efficacy and toxicity over time.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section class="section workflow" id="workflow">
+    <h2>Clinical workflow</h2>
+    <p class="section-sub">
+      Designed to plug into existing hospital and lab infrastructure.
+    </p>
+
+    <div class="workflow-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Data ingestion</h3>
+        <p>
+          Upload imaging, sequencing, and lab data via secure API or
+          dashboard, fully compliant with privacy regulations.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>AI analysis</h3>
+        <p>
+          Multi-modal models analyze immune contexture, tumor micro-environment,
+          and historical outcomes from similar patients.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Clinical report</h3>
+        <p>
+          Clear, interpretable report with response probability, risk flags,
+          and suggested treatment strategies.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Continuous learning</h3>
+        <p>
+          Outcomes are fed back into the platform to continuously improve
+          performance across indications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section class="section usecases" id="usecases">
+    <h2>Who we work with</h2>
+    <p class="section-sub">
+      ImmunoAI is built for teams pushing the frontier of immune-based
+      treatments.
+    </p>
+
+    <div class="usecase-grid">
+      <article class="usecase-card">
+        <h3>Oncology centers</h3>
+        <p>
+          Prioritize patients most likely to benefit from immunotherapy and
+          reduce time-to-response in complex cases.
+        </p>
+      </article>
+
+      <article class="usecase-card">
+        <h3>Biotech &amp; pharma</h3>
+        <p>
+          Stratify clinical-trial cohorts, discover biomarkers, and design
+          data-driven combination strategies.
+        </p>
+      </article>
+
+      <article class="usecase-card">
+        <h3>Research hospitals</h3>
+        <p>
+          Build advanced immune-profiling programs without needing an internal
+          ML infrastructure team.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="section contact" id="contact">
+    <div class="contact-card">
+      <h2>Request early access</h2>
+      <p>
+        Share a few details about your organization and clinical focus area.
+        Our team will reach out with a tailored demo.
+      </p>
+
+      <form class="contact-form">
+        <div class="field-row">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Organization" required />
+        </div>
+        <div class="field-row">
+          <input type="email" placeholder="Work email" required />
+          <input type="text" placeholder="Role (e.g. Oncologist)" />
+        </div>
+        <textarea
+          rows="3"
+          placeholder="Clinical area, indication, or trial focus..."
+        ></textarea>
+
+        <button type="submit" class="btn-primary">
+          Submit inquiry
+        </button>
+
+        <p class="small-note">
+          This is a prototype page – form submission is not yet connected to a
+          backend system.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span>© 2025 ImmunoAI. Clinical decision support for immunotherapy.</span>
+    <span class="footer-links">
+      <a href="#platform">Platform</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#contact">Contact</a>
+    </span>
+  </footer>
 </body>
 </html>
