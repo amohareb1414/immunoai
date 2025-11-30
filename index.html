@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImmunoAI – Precision Immunotherapy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo">IA</div>
+        <div class="brand-text">
+          <span class="brand-name">IMMUNOAI</span>
+          <span class="brand-tagline">Precision Immunotherapy</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>AI intelligence for <span class="green">precision immunotherapy</span></h1>
+        <p class="subtitle">
+          ImmunoAI predicts patient response using multi-omics, immune profiling, and clinical signals.
+        </p>
+        <a href="#" class="btn primary">Request early access</a>
+        <a href="#" class="btn ghost">Explore platform</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="panel">
+          <h3>Live immune response snapshot</h3>
+          <div class="row"><span>Predicted response</span><span>78%</span></div>
+          <div class="row"><span>Immune activation</span><span>High</span></div>
+          <div class="row"><span>Checkpoint suitability</span><span class="ok">Favorable</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> ImmunoAI — For research use only.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
